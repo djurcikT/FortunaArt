@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fortuna Art</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <img src="photos/logo-bela.png" alt="Logo" class="cursor-logo" />
+    <header>
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="photos/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <nav>
+        <div class="left">
+          <ul>
+            <li><a href="#">Početna</a></li>
+            <li><a href="#projects">Naši projekti</a></li>
+          </ul>
+        </div>
+        <div class="nav-container">
+          <div class="logo">
+            <a href="#">
+              <img src="photos/logo-bela.png" alt="Fortuna Art Logo" />
+            </a>
+          </div>
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="#about">O nama</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <div class="mobile-menu" id="mobileMenu">
+          <ul>
+            <li><a href="#">Početna</a></li>
+            <li><a href="#projects">Naši projekti</a></li>
+            <li><a href="#about">O nama</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header-text">
+        <p>Tamo gde preciznost postaje umetnost</p>
+      </div>
+    </header>
+    <div class="container">
+      <div class="projects" id="projects">
+        <h2 class="subtitle">Naši projekti</h2>
+        <div class="carousel-container">
+          <button class="carousel-button prev" onclick="prevSlide()">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="carousel">
+            <img
+              src="photos/image (12).jpg"
+              alt="Project 1"
+              class="carousel-img"
+            />
+            <img
+              src="photos/image (13).jpg"
+              alt="Project 2"
+              class="carousel-img"
+            />
+            <img
+              src="photos/image (14).jpg"
+              alt="Project 3"
+              class="carousel-img"
+            />
+            <img
+              src="photos/image (15).jpg"
+              alt="Project 4"
+              class="carousel-img"
+            />
+            <img
+              src="photos/image (16).jpg"
+              alt="Project 5"
+              class="carousel-img"
+            />
+            <img
+              src="photos/image (17).jpg"
+              alt="Project 6"
+              class="carousel-img"
+            />
+            <img
+              src="photos/image (18).jpg"
+              alt="Project 7"
+              class="carousel-img"
+            />
+            <img
+              src="photos/image (19).jpg"
+              alt="Project 8"
+              class="carousel-img"
+            />
+            <img
+              src="photos/image (20).jpg"
+              alt="Project 9"
+              class="carousel-img"
+            />
+          </div>
+          <button class="carousel-button next" onclick="nextSlide()">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="about" id="about">
+        <h2 class="subtitle">O nama</h2>
+        <div class="about-container">
+          <div class="box top-box">
+            <p>
+              Dobrodošli u Fortuna Art, mesto gde se strast prema umetnosti i
+              tehnologiji spaja kako bismo vam pružili proizvode vrhunskog
+              kvaliteta. Specijalizovani smo za lasersko sečenje i graviranje na
+              nemetalnim materijalima, koristeći najsavremeniju opremu i
+              kreativne tehnike. Naša misija je da vaše ideje pretvorimo u
+              jedinstvene i precizno izrađene proizvode koji odišu elegancijom i
+              personalizacijom. Bilo da želite ukrasne predmete, personalizovane
+              poklone, korporativni brending ili dekoraciju za posebne prilike,
+              naš tim je tu da realizuje vašu viziju. Verujemo da svaki detalj
+              ima priču i posvećeni smo tome da vaši proizvodi budu savršeno
+              izvedeni. Hvala vam što ste deo naše priče.
+            </p>
+          </div>
+          <div class="box bottom-box">
+            <p>
+              Ponosni smo što je Fortuna Art postala izbor za preko 20 manjih i
+              većih preduzeća koja su nam ukazala poverenje u raznim projektima.
+              Naša misija je uvek bila da pružimo rešenja prilagođena
+              specifičnim potrebama svakog klijenta, bez obzira na veličinu ili
+              obim posla. Od graviranja promotivnih materijala i
+              personalizovanih poklona do kreiranja unikatnih dekorativnih
+              elemenata, sarađivali smo sa kompanijama iz različitih industrija.
+              Svaki projekat za nas je bio prilika da pokažemo koliko
+              preciznost, kreativnost i posvećenost mogu da naprave razliku.
+              Hvala našim partnerima što su deo naše priče - zajedno stvaramo
+              proizvode i trenutke koji traju.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact" id="contact">
+        <h2 class="subtitle">Kontakt</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <ul>
+              <div class="up">
+                <li>
+                  <a href="https://www.instagram.com/fortuna.art.2023/"
+                    ><img
+                      src="photos/i-removebg-preview.png"
+                      alt=""
+                    />Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="photos/w-removebg-preview.png"
+                      alt=""
+                    />WhatsApp</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="photos/f-removebg-preview.png"
+                      alt=""
+                    />Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="photos/v-removebg-preview.png" alt="" />Viber</a
+                  >
+                </li>
+              </div>
+              <div class="down">
+                <li>
+                  <a href="mailto:fortunart.2023@gmail.com"
+                    ><i class="fa-solid fa-envelope"></i>Email</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+381601234567"
+                    ><i class="fa-solid fa-phone"></i>Telefon</a
+                  >
+                </li>
+              </div>
+            </ul>
+          </div>
+          <div class="map-container">
+            <div class="adress-text">
+              <p class="address">Adresa: Vuka Karadžića 111, Stara Pazova</p>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11286.529858343087!2d20.17991395969537!3d44.991776888553495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a590049e58563%3A0x5df5cc7b37b0c03b!2sFortuna%20Art!5e0!3m2!1ssr!2srs!4v1741170259205!5m2!1ssr!2srs"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="join">
+        <h2 class="subtitle">Postani deo nas</h2>
+        <div class="join-container">
+          <a href=""><img src="photos/2.png" alt="" /></a>
+          <a href=""><img src="photos/1.jfif" alt="" /></a>
+          <a href=""><img src="photos/3.png" alt="" /></a>
+          <a href=""><img src="photos/4.png" alt="" /></a>
+          <a href=""><img src="photos/5.png" alt="" /></a>
+          <a href=""><img src="photos/6.png" alt="" /></a>
+          <a href=""><img src="photos/7.png" alt="" /></a>
+          <a href=""><img src="photos/8.png" alt="" /></a>
+          <a href=""><img src="photos/9.png" alt="" /></a>
+          <a href=""><img src="photos/10.png" alt="" /></a>
+          <a href=""><img src="photos/11.jpg" alt="" /></a>
+          <a href=""><img src="photos/12.PNG" alt="" /></a>
+          <a href=""><img src="photos/13.png" alt="" /></a>
+          <a href=""><img src="photos/14.png" alt="" /></a>
+          <img src="photos/austral.jpg" alt="" />
+        </div>
+      </div>
+
+      <button id="topArrow" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+
+    <footer class="footer">
+      <p>
+        © 2025 Fortuna Art | Designed by
+        <span class="author"
+          ><a
+            href="https://www.linkedin.com/in/tamara-%C4%91ur%C4%8Dik-aa763423b/"
+            >DjurcikT</a
+          ></span
+        >
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
