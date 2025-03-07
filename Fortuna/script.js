@@ -64,6 +64,25 @@ document.addEventListener("mousemove", (e) => {
   logo.style.top = `${e.pageY + offsetY}px`;
 });
 
+// For join ribbon
+function scrollImages(amount) {
+  const ribbon = document.getElementById("imageRibbon");
+  const totalWidth = ribbon.scrollWidth;
+  const ribbonWidth = ribbon.clientWidth;
+
+  ribbon.scrollBy({ left: amount, behavior: "smooth" });
+
+  setTimeout(() => {
+    if (ribbon.scrollLeft <= 0) {
+      ribbon.scrollLeft = totalWidth - ribbonWidth;
+    }
+
+    if (ribbon.scrollLeft + ribbonWidth >= totalWidth) {
+      ribbon.scrollLeft = 0;
+    }
+  }, 300);
+}
+
 // For Home arrow
 const backToTopButton = document.getElementById("topArrow");
 

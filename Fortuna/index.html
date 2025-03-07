@@ -75,46 +75,55 @@
               src="photos/image (12).jpg"
               alt="Project 1"
               class="carousel-img"
+              loading="lazy"
             />
             <img
               src="photos/image (13).jpg"
               alt="Project 2"
               class="carousel-img"
+              loading="lazy"
             />
             <img
               src="photos/image (14).jpg"
               alt="Project 3"
               class="carousel-img"
+              loading="lazy"
             />
             <img
               src="photos/image (15).jpg"
               alt="Project 4"
               class="carousel-img"
+              loading="lazy"
             />
             <img
               src="photos/image (16).jpg"
               alt="Project 5"
               class="carousel-img"
+              loading="lazy"
             />
             <img
               src="photos/image (17).jpg"
               alt="Project 6"
               class="carousel-img"
+              loading="lazy"
             />
             <img
               src="photos/image (18).jpg"
               alt="Project 7"
               class="carousel-img"
+              loading="lazy"
             />
             <img
               src="photos/image (19).jpg"
               alt="Project 8"
               class="carousel-img"
+              loading="lazy"
             />
             <img
               src="photos/image (20).jpg"
               alt="Project 9"
               class="carousel-img"
+              loading="lazy"
             />
           </div>
           <button class="carousel-button next" onclick="nextSlide()">
@@ -163,50 +172,39 @@
         <h2 class="subtitle">Kontakt</h2>
         <div class="contact-container">
           <div class="contact-info">
-            <ul>
-              <div class="up">
-                <li>
-                  <a href="https://www.instagram.com/fortuna.art.2023/"
-                    ><img
-                      src="photos/i-removebg-preview.png"
-                      alt=""
-                    />Instagram</a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img
-                      src="photos/w-removebg-preview.png"
-                      alt=""
-                    />WhatsApp</a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img
-                      src="photos/f-removebg-preview.png"
-                      alt=""
-                    />Facebook</a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="photos/v-removebg-preview.png" alt="" />Viber</a
-                  >
-                </li>
-              </div>
-              <div class="down">
-                <li>
-                  <a href="mailto:fortunart.2023@gmail.com"
-                    ><i class="fa-solid fa-envelope"></i>Email</a
-                  >
-                </li>
-                <li>
-                  <a href="tel:+381601234567"
-                    ><i class="fa-solid fa-phone"></i>Telefon</a
-                  >
-                </li>
-              </div>
+            <ul class="social">
+              <li>
+                <a href="https://www.instagram.com/fortuna.art.2023/">
+                  <img src="photos/i-removebg-preview.png" alt="" />Instagram
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="photos/w-removebg-preview.png" alt="" />WhatsApp
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="photos/f-removebg-preview.png" alt="" />Facebook
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="photos/v-removebg-preview.png" alt="" />Viber
+                </a>
+              </li>
+            </ul>
+            <ul class="contact">
+              <li>
+                <a href="mailto:fortunart.2023@gmail.com">
+                  <i class="fa-solid fa-envelope"></i>Email
+                </a>
+              </li>
+              <li>
+                <a href="tel:+381601234567">
+                  <i class="fa-solid fa-phone"></i>Telefon
+                </a>
+              </li>
             </ul>
           </div>
           <div class="map-container">
@@ -225,25 +223,32 @@
           </div>
         </div>
       </div>
+
       <div class="join">
         <h2 class="subtitle">Postani deo nas</h2>
-        <div class="join-container">
-          <a href=""><img src="photos/2.png" alt="" /></a>
-          <a href=""><img src="photos/1.jfif" alt="" /></a>
-          <a href=""><img src="photos/3.png" alt="" /></a>
-          <a href=""><img src="photos/4.png" alt="" /></a>
-          <a href=""><img src="photos/5.png" alt="" /></a>
-          <a href=""><img src="photos/6.png" alt="" /></a>
-          <a href=""><img src="photos/7.png" alt="" /></a>
-          <a href=""><img src="photos/8.png" alt="" /></a>
-          <a href=""><img src="photos/9.png" alt="" /></a>
-          <a href=""><img src="photos/10.png" alt="" /></a>
-          <a href=""><img src="photos/11.jpg" alt="" /></a>
-          <a href=""><img src="photos/12.PNG" alt="" /></a>
-          <a href=""><img src="photos/13.png" alt="" /></a>
-          <a href=""><img src="photos/14.png" alt="" /></a>
-          <img src="photos/austral.jpg" alt="" />
+        <button class="arrow arrow-left" onclick="scrollImages(-200)">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="join-container" id="imageRibbon">
+          <img src="photos/2.png" alt="" loading="lazy" />
+          <img src="photos/1.jfif" alt="" loading="lazy" />
+          <img src="photos/3.png" alt="" loading="lazy" />
+          <img src="photos/4.png" alt="" loading="lazy" />
+          <img src="photos/5.png" alt="" loading="lazy" />
+          <img src="photos/6.png" alt="" loading="lazy" />
+          <img src="photos/7.png" alt="" loading="lazy" />
+          <img src="photos/8.png" alt="" loading="lazy" />
+          <img src="photos/9.png" alt="" loading="lazy" />
+          <img src="photos/10.png" alt="" loading="lazy" />
+          <img src="photos/11.jpg" alt="" loading="lazy" />
+          <img src="photos/12.PNG" alt="" loading="lazy" />
+          <img src="photos/13.png" alt="" loading="lazy" />
+          <img src="photos/14.png" alt="" loading="lazy" />
+          <img src="photos/austral.jpg" alt="" loading="lazy" />
         </div>
+        <button class="arrow arrow-right" onclick="scrollImages(200)">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
       </div>
 
       <button id="topArrow" class="back-to-top">
