@@ -15,7 +15,7 @@ document
 
       if (targetElement) {
         window.scrollTo({
-          top: targetElement.offsetTop - 50, // Adjust for fixed header if needed
+          top: targetElement.offsetTop - 50,
           behavior: "smooth",
         });
       }
