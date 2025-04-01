@@ -82,7 +82,7 @@ function incrementCounter(counterEl) {
   currentNum = Math.ceil(currentNum + increment);
 
   if (currentNum < dataCeil) {
-    setTimeout(() => incrementCounter(counterEl), 150);
+    setTimeout(() => incrementCounter(counterEl), 80);
     counterEl.innerText = currentNum;
   } else {
     counterEl.innerText = dataCeil;
