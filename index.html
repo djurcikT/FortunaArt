@@ -13,8 +13,8 @@
     <!-- icons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -33,7 +33,7 @@
         <div class="left">
           <ul>
             <li><a href="#">Početna</a></li>
-            <li><a href="#projects">Naši projekti</a></li>
+            <li><a href="#about">O nama</a></li>
           </ul>
         </div>
         <div class="nav-container">
@@ -45,7 +45,7 @@
         </div>
         <div class="right">
           <ul>
-            <li><a href="#about">O nama</a></li>
+            <li><a href="#projects">Naši projekti</a></li>
             <li><a href="#contact">Kontakt</a></li>
           </ul>
         </div>
@@ -53,91 +53,22 @@
         <div class="mobile-menu" id="mobileMenu">
           <ul>
             <li><a href="#">Početna</a></li>
-            <li><a href="#projects">Naši projekti</a></li>
             <li><a href="#about">O nama</a></li>
+            <li><a href="#projects">Naši projekti</a></li>
             <li><a href="#contact">Kontakt</a></li>
           </ul>
         </div>
       </nav>
-      <div class="header-text">
+      <div class="header-text animate-on-scroll">
         <p>Tamo gde preciznost postaje umetnost</p>
       </div>
     </header>
-    <div class="container">
-      <div class="projects" id="projects">
-        <h2 class="subtitle">Naši projekti</h2>
-        <div class="carousel">
-          <button class="carousel-button prev" onclick="moveSlide(-1)">
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-          <div class="carousel-track-wrapper">
-            <div class="carousel-track">
-              <img
-                src="photos/image (12).jpg"
-                alt="Project 1"
-                class="carousel-img"
-                loading="lazy"
-              />
-              <img
-                src="photos/image (13).jpg"
-                alt="Project 2"
-                class="carousel-img"
-                loading="lazy"
-              />
-              <img
-                src="photos/image (14).jpg"
-                alt="Project 3"
-                class="carousel-img"
-                loading="lazy"
-              />
-              <img
-                src="photos/image (15).jpg"
-                alt="Project 4"
-                class="carousel-img"
-                loading="lazy"
-              />
-              <img
-                src="photos/image (16).jpg"
-                alt="Project 5"
-                class="carousel-img"
-                loading="lazy"
-              />
-              <img
-                src="photos/image (17).jpg"
-                alt="Project 6"
-                class="carousel-img"
-                loading="lazy"
-              />
-              <img
-                src="photos/image (18).jpg"
-                alt="Project 7"
-                class="carousel-img"
-                loading="lazy"
-              />
-              <img
-                src="photos/image (19).jpg"
-                alt="Project 8"
-                class="carousel-img"
-                loading="lazy"
-              />
-              <img
-                src="photos/image (20).jpg"
-                alt="Project 9"
-                class="carousel-img"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <button class="carousel-button next" onclick="moveSlide(1)">
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
-        </div>
-      </div>
 
+    <div class="container">
       <div class="about" id="about">
-        <h2 class="subtitle">O nama</h2>
+        <h2 class="subtitle animate-on-scroll">O nama</h2>
         <div class="about-container">
-          <div class="box top-box">
+          <div class="box top-box animate-on-scroll">
             <p>
               Dobrodošli u Fortuna Art, mesto gde se strast prema umetnosti i
               tehnologiji spaja kako bismo vam pružili proizvode vrhunskog
@@ -152,7 +83,7 @@
               izvedeni. Hvala vam što ste deo naše priče.
             </p>
           </div>
-          <div class="box bottom-box">
+          <div class="box bottom-box animate-on-scroll">
             <p>
               Ponosni smo što je Fortuna Art postala izbor za preko 20 manjih i
               većih preduzeća koja su nam ukazala poverenje u raznim projektima.
@@ -170,106 +101,173 @@
         </div>
       </div>
 
-      <div class="contact" id="contact">
-        <h2 class="subtitle">Kontakt</h2>
-        <div class="contact-container">
-          <div class="contact-info">
-            <ul class="social">
-              <li>
-                <a href="https://www.instagram.com/fortuna.art.2023/">
-                  <img src="photos/i-removebg-preview.png" alt="" />Instagram
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img src="photos/w-removebg-preview.png" alt="" />WhatsApp
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img src="photos/f-removebg-preview.png" alt="" />Facebook
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img src="photos/v-removebg-preview.png" alt="" />Viber
-                </a>
-              </li>
-            </ul>
-            <ul class="contact">
-              <li>
-                <a href="mailto:fortunart.2023@gmail.com">
-                  <i class="fa-solid fa-envelope"></i>Email
-                </a>
-              </li>
-              <li>
-                <a href="tel:+381601234567">
-                  <i class="fa-solid fa-phone"></i>Telefon
-                </a>
-              </li>
-            </ul>
+      <div class="counter">
+        <div class="stats-container animate-on-scroll">
+          <i class="fa-solid fa-user icon"></i>
+          <div
+            class="counter-field"
+            data-ceil="327"
+            data-from="0"
+            data-to="327"
+            data-speed="1000"
+            data-refresh-interval="50"
+          >
+            327
           </div>
-          <div class="map-container">
-            <div class="address-text">
-              <p class="address">Adresa: Vuka Karadžića 111, Stara Pazova</p>
-            </div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11286.529858343087!2d20.17991395969537!3d44.991776888553495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a590049e58563%3A0x5df5cc7b37b0c03b!2sFortuna%20Art!5e0!3m2!1ssr!2srs!4v1741170259205!5m2!1ssr!2srs"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              class="map"
-            ></iframe>
+          <h4>Zadovoljni klijenti</h4>
+        </div>
+        <div class="stats-container animate-on-scroll">
+          <i class="fa-solid fa-gears icon"></i>
+          <div
+            class="counter-field"
+            data-ceil="7"
+            data-from="0"
+            data-to="7"
+            data-speed="1000"
+            data-refresh-interval="50"
+          >
+            7
           </div>
+          <h4>Broj mašina</h4>
+        </div>
+        <div class="stats-container animate-on-scroll">
+          <i class="fa-solid fa-boxes-packing icon"></i>
+          <div
+            class="counter-field"
+            data-ceil="246"
+            data-from="0"
+            data-to="246"
+            data-speed="1000"
+            data-refresh-interval="50"
+          >
+            246
+          </div>
+          <h4>Broj proizvoda</h4>
         </div>
       </div>
 
-      <div class="join">
+      <div class="join animate-on-scroll">
         <h2 class="subtitle">Postani deo nas</h2>
+
         <button class="arrow arrow-left" onclick="scrollImages(-200)">
           <i class="fa-solid fa-chevron-left"></i>
         </button>
+        <div class="background"></div>
         <div class="join-container" id="imageRibbon">
-          <img src="photos/1.png" alt="" loading="lazy" />
+          <img src="photos/1.jfif" alt="" loading="lazy" />
           <img src="photos/2.png" alt="" loading="lazy" />
           <img src="photos/3.png" alt="" loading="lazy" />
           <img src="photos/4.png" alt="" loading="lazy" />
           <img src="photos/5.png" alt="" loading="lazy" />
-          <img src="photos/6.png" alt="" loading="lazy" />
+          <img src="photos/6.jpg" alt="" loading="lazy" />
           <img src="photos/7.png" alt="" loading="lazy" />
-          <img src="photos/8.png" alt="" loading="lazy" />
           <img src="photos/9.png" alt="" loading="lazy" />
-          <img src="photos/10.png" alt="" loading="lazy" />
-          <img src="photos/11.png" alt="" loading="lazy" />
-          <img src="photos/12.png" alt="" loading="lazy" />
+          <img src="photos/10.jpg" alt="" loading="lazy" />
+          <img src="photos/11.jpg" alt="" loading="lazy" />
+          <img src="photos/12.jpg" alt="" loading="lazy" />
           <img src="photos/13.png" alt="" loading="lazy" />
           <img src="photos/14.png" alt="" loading="lazy" />
-          <img src="photos/15.png" alt="" loading="lazy" />
+          <img src="photos/austral.jpg" alt="" loading="lazy" />
         </div>
         <button class="arrow arrow-right" onclick="scrollImages(200)">
           <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
 
+      <div class="projects animate-on-scroll" id="projects">
+        <h2 class="subtitle">Naši projekti</h2>
+        <div class="image-container">
+          <img src="https://picsum.photos/300?random=1" />
+          <img src="https://picsum.photos/300?random=2" />
+          <img src="https://picsum.photos/300?random=3" />
+          <img src="https://picsum.photos/300?random=4" />
+          <img src="https://picsum.photos/300?random=5" />
+          <img src="https://picsum.photos/300?random=6" />
+          <img src="https://picsum.photos/300?random=7" />
+          <img src="https://picsum.photos/300?random=8" />
+          <img src="https://picsum.photos/300?random=9" />
+          <img src="https://picsum.photos/300?random=10" />
+        </div>
+      </div>
+
       <button id="topArrow" class="back-to-top">
         <i class="fa-solid fa-arrow-up"></i>
       </button>
-    </div>
 
-    <footer class="footer">
-      <p>
-        © 2025 Fortuna Art | Designed by
-        <span class="author"
-          ><a
-            href="https://www.linkedin.com/in/tamara-%C4%91ur%C4%8Dik-aa763423b/"
-            >DjurcikT</a
-          ></span
-        >
-      </p>
-    </footer>
+      <footer class="footer" id="contact">
+        <div class="footer-container">
+          <!-- Navigacija -->
+          <div class="footer-left">
+            <h3>Navigacija</h3>
+            <ul>
+              <li><a href="#">Početna</a></li>
+              <li><a href="#about">O nama</a></li>
+              <li><a href="#projects">Naši projekti</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+            </ul>
+          </div>
+
+          <!-- Društvene mreže -->
+          <div class="footer-center">
+            <h3>Zapratite nas</h3>
+            <div class="social-icons">
+              <a
+                href="https://www.instagram.com/fortuna.art.2023/"
+                target="_blank"
+              >
+                <img src="photos/i-removebg-preview.png" alt="Instagram" />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61574816693343"
+                target="_blank"
+              >
+                <img src="photos/f-removebg-preview.png" alt="Facebook" />
+              </a>
+              <a href="">
+                <img src="photos/w-removebg-preview.png" alt="WhatsApp" />
+              </a>
+              <a href="">
+                <img src="photos/v-removebg-preview.png" alt="Viber" />
+              </a>
+            </div>
+
+            <div class="contact-info">
+              <i class="fa-solid fa-envelope"></i>
+              <p>fortunart.2023@gmail.com</p>
+              <i class="fa-solid fa-phone"></i>
+              <p>+381 60 123 4567</p>
+            </div>
+          </div>
+
+          <!-- Lokacija -->
+          <div class="footer-right">
+            <h3>Lokacija</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11286.529858343087!2d20.17991395969537!3d44.991776888553495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a590049e58563%3A0x5df5cc7b37b0c03b!2sFortuna%20Art!5e0!3m2!1ssr!2srs!4v1741170259205!5m2!1ssr!2srs"
+              class="map"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+            <p>📍 Vuka Karadžića 111, Stara Pazova</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © 2025 Fortuna Art | Designed by
+            <span class="author">
+              <a
+                href="https://www.linkedin.com/in/tamara-%C4%91ur%C4%8Dik-aa763423b/"
+                target="_blank"
+                >DjurcikT</a
+              >
+            </span>
+          </p>
+        </div>
+      </footer>
+    </div>
 
     <script src="script.js"></script>
   </body>

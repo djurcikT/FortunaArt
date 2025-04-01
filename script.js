@@ -44,40 +44,6 @@ document
     });
   });
 
-// For Carousel
-let index = 0;
-let autoSlideInterval;
-const track = document.querySelector(".carousel-track");
-const slides = document.querySelectorAll(".carousel-img");
-const totalSlides = slides.length;
-
-function updateSlide() {
-  const slideWidth = track.clientWidth; // Ensures correct width calculation
-  track.style.transform = `translateX(${-index * slideWidth}px)`;
-}
-
-function moveSlide(step) {
-  index = (index + step + totalSlides) % totalSlides;
-  updateSlide();
-  resetAutoSlide();
-}
-
-function autoSlide() {
-  moveSlide(1);
-  autoSlideInterval = setTimeout(autoSlide, 5000);
-}
-
-function resetAutoSlide() {
-  clearTimeout(autoSlideInterval);
-  autoSlideInterval = setTimeout(autoSlide, 5000);
-}
-
-window.addEventListener("resize", updateSlide);
-
-document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(autoSlide, 5000);
-});
-
 // For cursor
 document.addEventListener("mousemove", (e) => {
   const logo = document.querySelector(".cursor-logo");
@@ -91,7 +57,7 @@ document.addEventListener("mousemove", (e) => {
 function scrollImages(amount) {
   const ribbon = document.getElementById("imageRibbon");
   const totalWidth = ribbon.scrollWidth;
-  const ribbonWidth = ribbon.clientWidth;
+  const ribbonWidth = ribbon.offsetWidth;
 
   ribbon.scrollBy({ left: amount, behavior: "smooth" });
 
@@ -105,6 +71,47 @@ function scrollImages(amount) {
     }
   }, 300);
 }
+
+// For counter
+const countersEl = document.querySelectorAll(".counter-field");
+
+function incrementCounter(counterEl) {
+  let currentNum = +counterEl.innerText;
+  const dataCeil = counterEl.getAttribute("data-ceil");
+  const increment = dataCeil / 40;
+  currentNum = Math.ceil(currentNum + increment);
+
+  if (currentNum < dataCeil) {
+    setTimeout(() => incrementCounter(counterEl), 150);
+    counterEl.innerText = currentNum;
+  } else {
+    counterEl.innerText = dataCeil;
+  }
+}
+
+// For animation
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".animate-on-scroll");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const counterEl = entry.target.querySelector(".counter-field");
+          if (counterEl && !counterEl.dataset.counted) {
+            counterEl.innerText = "0";
+            incrementCounter(counterEl);
+            counterEl.dataset.counted = "true";
+          }
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+});
 
 // For Home arrow
 const backToTopButton = document.getElementById("topArrow");
